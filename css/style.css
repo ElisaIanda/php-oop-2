@@ -1,0 +1,24 @@
+.img-animal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    color: darkgray;
+
+}
+
+.p-r{
+    position: relative;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.card-img-top{
+    height: 338px;
+    object-fit: cover;
+}
