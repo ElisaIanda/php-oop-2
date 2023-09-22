@@ -1,19 +1,24 @@
 <?php
-require_once __DIR__."/Products.php";
+require_once __DIR__ . "/Products.php";
 
-class Toys extends Products{
+class Toys extends Products
+{
         protected $img;
         protected $price;
         protected $brand;
+        protected $newPrice;
+        protected $totDiscount;
 
 
-        public function __construct ( $name,  $category,  $img, $brand, $price)
+
+        public function __construct($name,  $category,  $img, $brand, $price, $discount,)
         {
                 $this->name = $name;
                 $this->category = $category;
                 $this->img = $img;
                 $this->price = $price;
                 $this->brand = $brand;
+                $this->discount = $discount;
         }
 
         public function getImg()
@@ -40,7 +45,7 @@ class Toys extends Products{
                 return $this;
         }
 
-        
+
         public function getBrand()
         {
                 return $this->brand;
@@ -52,4 +57,14 @@ class Toys extends Products{
 
                 return $this;
         }
+
+        public function getdiscountApplicato(){
+
+                if ($this->discount >= 0 && $this->discount <= 100) {
+                        $this->newPrice = ($this->price * $this->discount / 100);
+                }
+
+                return $this->newPrice;
+        }
+        
 }

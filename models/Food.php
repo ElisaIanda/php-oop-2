@@ -1,11 +1,15 @@
 <?php
 require_once __DIR__ . "/Products.php";
 
+
 class Food extends Products
 {
+
         protected $img;
         protected $price;
         protected $brand;
+
+        
 
         public function __construct($name, $category, $img, $brand, $price)
         {
@@ -15,6 +19,7 @@ class Food extends Products
                 $this->price = $price;
                 $this->brand = $brand;
         }
+
 
 
         public function getImg()

@@ -1,6 +1,5 @@
 <?php
 
-
 $dog = new Dog();
 $cat = new Cat();
 
@@ -11,7 +10,7 @@ $productList = [
         category: $dog->getImg(),
         brand: "Ultra Premium",
         img: "https://medias.ultrapremiumdirect.com/italy/production/catalog/products/001010/1.jpg?tr=q-50,w-554,h-554&v=-1690500536",
-        price: 45.90
+        price: 45.90,
     ),
 
     new Food(
@@ -36,7 +35,8 @@ $productList = [
         category: $dog->getImg(),
         brand: "Nature Pet Shop",
         img: "https://www.naturepetshop.it/wp-content/uploads/kong_wild_knots_bear_small_medium.jpg",
-        price: 10.90
+        price: 10.90,
+        discount: 10,
     ),
 
     new Toys(
@@ -44,7 +44,8 @@ $productList = [
         category: $dog->getImg(),
         brand: "Nature Pet Shop",
         img: "https://www.naturepetshop.it/wp-content/uploads/becorope-gioco-corda-2nodi-eco-compatibile-.jpg",
-        price: 11.90
+        price: 11.90,
+        discount: 10,
     ),
 
     new Toys(
@@ -52,7 +53,8 @@ $productList = [
         category: $cat->getImg(),
         brand: "Nature Pet Shop",
         img: "https://www.naturepetshop.it/wp-content/uploads/gioco-cane-in-stoffa-beco-con-squeaker-estella-lelefante.jpg",
-        price: 9.99
+        price: 9.99,
+        discount: 10,
     ),
 
     // cuccie
@@ -120,7 +122,9 @@ $toysList = [
         category: $dog->getImg(),
         brand: "Nature Pet Shop",
         img: "https://www.naturepetshop.it/wp-content/uploads/kong_wild_knots_bear_small_medium.jpg",
-        price: 10.90
+        price: 10.90,
+        discount: 10,
+
     ),
 
     new Toys(
@@ -128,7 +132,9 @@ $toysList = [
         category: $dog->getImg(),
         brand: "Nature Pet Shop",
         img: "https://www.naturepetshop.it/wp-content/uploads/becorope-gioco-corda-2nodi-eco-compatibile-.jpg",
-        price: 11.90
+        price: 11.90,
+        discount: 10,
+
     ),
 
     new Toys(
@@ -136,7 +142,9 @@ $toysList = [
         category: $cat->getImg(),
         brand: "Nature Pet Shop",
         img: "https://www.naturepetshop.it/wp-content/uploads/gioco-cane-in-stoffa-beco-con-squeaker-estella-lelefante.jpg",
-        price: 9.99
+        price: 9.99,
+        discount: 10,
+
     ),
 ];
 
