@@ -67,6 +67,14 @@ require_once __DIR__ . "/db/db.php";
                                     <?php echo $singleToy->getPrice() ?> €
                                 </p>
                                 <p class="card-text my-2">
+                                    <b>Sconto: </b>
+                                    <?php echo $singleToy->getDiscount() ?> %
+                                </p>
+                                <p class="card-text my-2">
+                                    <b>Risparmi: </b>
+                                    <?php echo $singleToy->getdiscountApplicato() ?> €
+                                </p>
+                                <p class="card-text my-2">
                                     <b>Brand: </b>
                                     <?php echo $singleToy->getBrand() ?>
                                 </p>
